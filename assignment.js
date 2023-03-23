@@ -12,3 +12,10 @@ const members = [
     return firstNames;
   });
   console.log(firstNames);
+
+  const lastNames = members.map((a) => {
+    const lastNames = a.name.toUpperCase();
+    return lastNames;
+  });
+  console.log(lastNames);
+
