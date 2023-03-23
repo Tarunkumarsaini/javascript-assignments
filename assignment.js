@@ -10,10 +10,16 @@ const members = [
   let newarr = members.map(function(a){
     return a.name;
   });
-for(let i = 0 ;i<newarr.length;i++){
-    const st = newarr[i].toString();
-    const new1 = st.split(" ") ;
-    const new2 = new1[0];
-    console.log(new2);
+function mysort()
+{
+    for( let i = 0;i<newarr.length;i++)
+    {
+    let st = newarr[i].toString();
+    let new1 = st.split(" ");
+    let new2 = new1[0];
+    let arr = [];
+    arr[i] = new2;
+    console.log(arr);
+    } 
 }
-  
+ mysort();
