@@ -14,8 +14,9 @@ const members = [
   console.log(firstNames);
 
   const lastNames = members.map((a) => {
-    const lastNames = a.name.toUpperCase();
-    return lastNames;
+    const lastNames = a.name.split(" ")[1];
+    return lastNames.toString().toUpperCase();
   });
-  console.log(lastNames);
+  for(let i = 0; i<7;i++){
+   console.log(firstNames[i] +" " + lastNames[+i]);}
 
