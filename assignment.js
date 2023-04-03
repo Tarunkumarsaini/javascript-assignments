@@ -32,3 +32,11 @@ for(i=0;i<avg.length;i++){
 console.log(total);
 let ageavg = total/avg.length;
 console.log(ageavg);
+
+let  maxage = 0;
+members.forEach(elements => {
+  if(elements.age>maxage){
+    maxage = elements.age;
+  }
+});
+console.log(maxage);
