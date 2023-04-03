@@ -47,9 +47,37 @@ console.log(names);
 
 members.splice(2,0,{name:'tarun saini',age:22});
 console.log(members);
-
+// question 8
 const [{name}] = members;
 console.log(name);
 const [, , {age},...rest] = members;
 console.log(age);
 console.log(rest);
+// question 9 
+members.splice(0,0,{name:'tarun kumar',age:23});
+console.log(members);
+
+// question 10
+
+let result1 =[];
+let property1 = 'name';
+for(let i=0;i<members.length;i++){
+  result1.push(members[i][property1]);
+}
+console.log(result1);
+
+let result2 =[];
+let property2 = 'age';
+for(let i=0;i<members.length;i++){
+  result2.push(members[i][property2]);
+}
+console.log(result2);
+
+// let result3 = [ , , {name} , ...rest];
+// result3 = members;
+// console.log(result3);
+console.log([...members]);
+const member2 = [...members];
+members.push({name:'vinod' , age:55 })
+console.log(member2);
+console.log(members);
