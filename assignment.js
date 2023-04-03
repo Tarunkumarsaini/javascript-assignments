@@ -20,3 +20,7 @@ const members = [
   for(let j = 0; j<7;j++){
    console.log(firstNames[j] +" " + lastNames[+j]);}
 
+const sortages = members.filter((item)=>{
+  return item.age >=41 && item.age <=60 ;
+});
+console.log(sortages);
