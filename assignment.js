@@ -24,3 +24,11 @@ const sortages = members.filter((item)=>{
   return item.age >=41 && item.age <=60 ;
 });
 console.log(sortages);
+const avg = members.map((a)=>a.age).filter((a)=>a);
+let total = 0 ;
+for(i=0;i<avg.length;i++){
+  total = total + avg[i];
+}
+console.log(total);
+let ageavg = total/avg.length;
+console.log(ageavg);
