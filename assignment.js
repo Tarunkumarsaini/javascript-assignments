@@ -40,3 +40,10 @@ members.forEach(elements => {
   }
 });
 console.log(maxage);
+
+console.log(members[0].name);
+const [names] = members;
+console.log(names);
+
+members.splice(2,0,{name:'tarun saini',age:22});
+console.log(members);
