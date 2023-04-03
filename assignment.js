@@ -47,3 +47,9 @@ console.log(names);
 
 members.splice(2,0,{name:'tarun saini',age:22});
 console.log(members);
+
+const [{name}] = members;
+console.log(name);
+const [, , {age},...rest] = members;
+console.log(age);
+console.log(rest);
