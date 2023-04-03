@@ -17,6 +17,6 @@ const members = [
     const lastNames = a.name.split(" ")[1];
     return lastNames.toString().toUpperCase();
   });
-  for(let i = 0; i<7;i++){
-   console.log(firstNames[i] +" " + lastNames[+i]);}
+  for(let j = 0; j<7;j++){
+   console.log(firstNames[j] +" " + lastNames[+j]);}
 
