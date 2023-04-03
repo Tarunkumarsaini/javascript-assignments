@@ -76,8 +76,11 @@ console.log(result2);
 // let result3 = [ , , {name} , ...rest];
 // result3 = members;
 // console.log(result3);
+// spread operator
 console.log([...members]);
 const member2 = [...members];
 members.push({name:'vinod' , age:55 })
 console.log(member2);
 console.log(members);
+const member3 = [...members , ...member2]
+console.log(member3);
